@@ -69,6 +69,8 @@
                     name = "";
                     surname = "";
                     ageStr = "";
+                    age = null;
+                    response.sendRedirect("index.jsp");
                 }
             }
 
@@ -82,7 +84,7 @@
 
                     <!-- Modal content-->
                     <div class="modal-content">
-                        <form action="index.jsp">
+                        <form action="index.jsp" method="GET">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 <h4 class="modal-title">Delete Student</h4>
@@ -111,7 +113,7 @@
 
                     <!-- Modal content-->
                     <div class="modal-content">
-                        <form action="index.jsp">
+                        <form action="index.jsp" method="POST">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 <h4 class="modal-title">Update Student</h4>
