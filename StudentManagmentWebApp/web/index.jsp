@@ -30,11 +30,9 @@
             function setIdForUpdate(id) {
                 document.getElementById("studentIdForUpdate").value = id;
             }
-
         </script>
     </head>
     <body> 
-
         <%
             String action = request.getParameter("action");
 
@@ -76,7 +74,6 @@
 
             List<Student> students = StudentDatabase.getAllStudents(name, surname, age);
         %>
-
         <div class="container">
             <!-- Modal -->
             <div class="modal fade" id="deleteModal" role="dialog">
@@ -221,10 +218,7 @@
                 %>
 
             </tbody>
-
         </table>
-
-
     </body>
 </html>
 
