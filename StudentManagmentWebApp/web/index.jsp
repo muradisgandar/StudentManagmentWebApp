@@ -62,7 +62,6 @@
                 if (action.equalsIgnoreCase("add")) {
                     StudentDatabase.addStudent(new Student(null, name, surname, age));
                 }
-
                 if (!action.equalsIgnoreCase("search")) {
                     name = "";
                     surname = "";
@@ -71,7 +70,6 @@
                     response.sendRedirect("index.jsp");
                 }
             }
-
             List<Student> students = StudentDatabase.getAllStudents(name, surname, age);
         %>
         <div class="container">
