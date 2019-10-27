@@ -212,11 +212,9 @@
                         </button> 
                     </td>
                 </tr>
-
                 <%
                     }
                 %>
-
             </tbody>
         </table>
     </body>
